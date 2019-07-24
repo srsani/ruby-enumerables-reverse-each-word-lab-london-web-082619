@@ -8,10 +8,9 @@ def reverse_each_word (string_in)
 end 
 
 def reverse_each_word (string_in)
-  s = ''
-  string_in.collect do |str|
-    s = str+s
+  inter_one = string_in.split
+  inter_two = inter_one.collect do |str|
+    str.reverse
   end
-  s_out= s.split.reverse
-  s_out_f = s_out.join(' ')
+  inter_out = inter_two.join(' ')
 end 
